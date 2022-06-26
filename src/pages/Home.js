@@ -94,7 +94,7 @@ const Home = () => {
         itemOne={<ReactCompareSliderImage src={LeftMap} alt="Image one" />}
         itemTwo={<ReactCompareSliderImage src={RightMap} alt="Image two" />}
       />
-      <div className="h-[250px] flex items-center font-Messina border-b-2">
+      <div className="h-[250px] flex items-center font-Messina border-b-2 justify-center">
         <Layout>
           <img src={Key} className="object-cover h-20 mb-10" />
           <p className="w-[1200px]">
