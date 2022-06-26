@@ -16,8 +16,8 @@ const Temperature = () => {
           to="atmosphere"
           className={({ isActive }) =>
             isActive
-              ? "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col"
-              : "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-[#777077]"
+              ? "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-center"
+              : "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-center text-[#777077]"
           }
         >
           <div>
@@ -31,8 +31,8 @@ const Temperature = () => {
           to="ocean"
           className={({ isActive }) =>
             isActive
-              ? "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col"
-              : "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-[#777077]"
+              ? "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-center"
+              : "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-center text-[#777077]"
           }
         >
           <div>
@@ -46,8 +46,8 @@ const Temperature = () => {
           to="land"
           className={({ isActive }) =>
             isActive
-              ? "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col"
-              : "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-[#777077]"
+              ? "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-center"
+              : "w-[200px] h-[120px] flex justify-center items-center font-bold box-hover-temp flex-col text-center text-[#777077]"
           }
         >
           <div>
