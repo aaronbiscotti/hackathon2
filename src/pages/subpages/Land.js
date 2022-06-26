@@ -59,7 +59,6 @@ const Land = () => {
   useEffect(() => {
     let map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/mapbox/light-v10",
       center: [-118.243683, 34.052235],
       zoom: 6,
     });

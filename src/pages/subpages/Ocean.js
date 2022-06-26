@@ -15,7 +15,6 @@ const Ocean = () => {
   useEffect(() => {
     let map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/mapbox/light-v10",
       center: [138.043, 35.201],
       zoom: zoom,
     });
