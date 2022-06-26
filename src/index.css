@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --Lora: 'Lora', serif;
+    --Messina: 'Messina Sans', serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--Lora);
+    overflow-x: hidden;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+.logo-hover {
+    fill: purple;
+}
+
+li {
+    margin-bottom: 10px;
+}
+li:is(#nav-link):hover {
+    border-right: 20px solid black;
+}
+
+li:is(#footerlist):hover {
+    border-bottom: 1px solid #8a2dff;
+}
+
+li:is(#footerlist) {
+    border-bottom: 1px solid white;
+}
+
+.box-hover:hover {
+    background: #1c101e;
+    color: white;
+}
+.box-hover-temp:not(#volnum):hover {
+    text-decoration: underline;
+}
+
+.gradient-key {
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px;
+    background: hsla(57, 95%, 91%, 1);
+    background: linear-gradient(90deg, hsla(57, 95%, 91%, 1) 0%, hsla(49, 100%, 82%, 1) 9%, hsla(45, 98%, 76%, 1) 18%, hsla(38, 100%, 69%, 1) 27%, hsla(32, 98%, 63%, 1) 36%, hsla(25, 98%, 61%, 1) 44%, hsla(25, 98%, 61%, 1) 44%, hsla(13, 96%, 58%, 1) 65%, hsla(4, 84%, 53%, 1) 75%, hsla(354, 87%, 44%, 1) 85%, hsla(347, 100%, 35%, 1) 93%, hsla(344, 100%, 27%, 1) 100%);
+}
+
+.header {
+    font-family: "Noto Serif Display", serif;
+}
+
+
+.sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    margin: 12px;
+    border-radius: 4px;
+}
+
+.anchors {
+    color: #0091f6;
+}
