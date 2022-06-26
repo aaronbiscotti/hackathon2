@@ -39,7 +39,7 @@ li:is(#footerlist) {
 }
 
 .box-hover:hover {
-    background: #1c101e;
+    background: #ec2e20;
     color: white;
 }
 .box-hover-temp:not(#volnum):hover {
