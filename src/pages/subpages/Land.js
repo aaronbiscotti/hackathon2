@@ -135,6 +135,7 @@ const Land = () => {
         <div
           ref={mapContainer}
           className="h-[500px] w-[60%] font-Messina"
+          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         ></div>
       </div>
       <div className="h-[200px] flex items-center font-Messina border-b-2">

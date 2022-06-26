@@ -4,9 +4,6 @@ import Coral from "../../assets/images/coral.jpg";
 import Layout from "../../components/Layout";
 import { Link } from "react-router-dom";
 const Ocean = () => {
-  mapboxgl.accessToken =
-    "pk.eyJ1IjoiYWFyb25iaXNjb3R0aSIsImEiOiJjbDRzeDQzbGUwZngwM2x1YTAyZjU4ZGwzIn0.nsQbB2LoVbnAp03N4X7NbA";
-
   const mapContainer = useRef(null);
   const [zoom, setZoom] = useState(4.5);
   const [bleachIndex, setBleachIndex] = useState("None selected");
@@ -100,6 +97,7 @@ const Ocean = () => {
         <div
           ref={mapContainer}
           className="h-[500px] w-[60%] font-Messina"
+          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         ></div>
         <Layout>
           <p className="mt-20 font-Messina text-center max-w-[700px]">
