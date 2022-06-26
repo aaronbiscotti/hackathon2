@@ -97,7 +97,7 @@ const Home = () => {
       <div className="h-[250px] flex items-center font-Messina border-b-2 justify-center">
         <Layout>
           <img src={Key} className="object-cover h-20 mb-10" />
-          <p className="w-[1200px]">
+          <p>
             This map depicts a projected average increase in days with maximum
             temperatures above 90° Fahrenheit in the United States from
             1961-1990 (left) compared to the 2020s-2050s (right). If greenhouse
