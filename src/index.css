@@ -44,6 +44,7 @@ li:is(#footerlist) {
 }
 .box-hover-temp:not(#volnum):hover {
     text-decoration: underline;
+    text-decoration-color: #8a2dff;
 }
 
 .gradient-key {
