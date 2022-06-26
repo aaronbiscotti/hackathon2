@@ -5,15 +5,16 @@ import Layout from "../../components/Layout";
 import { Link } from "react-router-dom";
 const Ocean = () => {
   const mapContainer = useRef(null);
-  const [zoom, setZoom] = useState(4.5);
   const [bleachIndex, setBleachIndex] = useState("None selected");
   const [ecoregion, setEcoregion] = useState("None selected");
   const [date, setDate] = useState("N/A");
+  mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY;
   useEffect(() => {
     let map = new mapboxgl.Map({
       container: mapContainer.current,
+      style: "mapbox://styles/mapbox/light-v10",
       center: [138.043, 35.201],
-      zoom: zoom,
+      zoom: 6,
     });
     map.on("load", () => {
       map.addSource("coral-reefs", {
@@ -40,7 +41,6 @@ const Ocean = () => {
       });
       if (features.length > 0) {
         const feature = features[0];
-        console.log(feature?.properties?.Average_Bleaching);
         setBleachIndex(feature?.properties?.Average_Bleaching);
         setEcoregion(feature?.properties?.Ecoregion);
         setDate(feature?.properties?.Date);
@@ -97,7 +97,6 @@ const Ocean = () => {
         <div
           ref={mapContainer}
           className="h-[500px] w-[60%] font-Messina"
-          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         ></div>
         <Layout>
           <p className="mt-20 font-Messina text-center max-w-[700px]">

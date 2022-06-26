@@ -52,13 +52,12 @@ const data = [
 ];
 
 const Land = () => {
-  mapboxgl.accessToken =
-    "pk.eyJ1IjoiYWFyb25iaXNjb3R0aSIsImEiOiJjbDRzeDQzbGUwZngwM2x1YTAyZjU4ZGwzIn0.nsQbB2LoVbnAp03N4X7NbA";
-
+  mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY;
   const mapContainer = useRef(null);
   useEffect(() => {
     let map = new mapboxgl.Map({
       container: mapContainer.current,
+      style: "mapbox://styles/mapbox/light-v10",
       center: [-118.243683, 34.052235],
       zoom: 6,
     });
@@ -135,8 +134,8 @@ const Land = () => {
         <div
           ref={mapContainer}
           className="h-[500px] w-[60%] font-Messina"
-          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         ></div>
+
       </div>
       <div className="h-[200px] flex items-center font-Messina border-b-2">
         <Layout>
